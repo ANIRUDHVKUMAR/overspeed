@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#checkboxContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+#slider-container {
+    margin-top: 10px;
+}
+
+#slider-label {
+    display: block;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenRailwayMap with Leaflet</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map">
+        <div id="checkboxContainer">
+            <input type="checkbox" id="grayscaleCheckbox">
+            <label class="checkbox-label" for="grayscaleCheckbox">Grayscale</label>
+            <div id="slider-container">
+                <label id="slider-label" for="timescale-slider">Speed: <span id="timescale-value">1</span></label>
+                <input type="range" id="timescale-slider" min="1" max="10" value="1" step="0.1" oninput="updateTimescale(this.value)">
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
